@@ -1,12 +1,12 @@
-create table TBL_BLOGGER
+create table TBL_USER
 (
-  bid         NUMBER(5),
-  userid      NUMBER(5),
-  title       VARCHAR2(32),
-  blogcontent VARCHAR2(1000),
-  cid         NUMBER(5),
-  lv          NUMBER(5),
-  readable    CHAR(1),
-  createtime  DATE,
-  delflag     CHAR(1)
+  userid         VARCHAR2(255),
+  uname          VARCHAR2(32) unique,
+  blogname       VARCHAR2(32),
+  userpass       VARCHAR2(32),
+  email          VARCHAR2(32),
+  descriptions   VARCHAR2(32),
+  createtime     VARCHAR2(32),
+  lastmodifytime DATE,
+  delflag        CHAR(1)
 );
