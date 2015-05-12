@@ -13,6 +13,5 @@
 		<s:textarea name="blogcontent" label="内容" rows="3" cols="45" />
 		<s:submit value="保存" />
 	</s:form>
-	<s:debug></s:debug>
 </body>
 </html>
