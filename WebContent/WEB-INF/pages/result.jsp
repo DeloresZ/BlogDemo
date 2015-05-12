@@ -7,6 +7,7 @@
 <title>结果页面</title>
 </head>
 <body>
-<h1>${message}<h1>
+<h1>${message}</h1>
+<a href="${pageContext.request.contextPath}/user/showBlog.action">返回主页</a>
 </body>
 </html>

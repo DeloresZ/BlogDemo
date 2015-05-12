@@ -20,7 +20,7 @@
 
     <package name="user" namespace="/user" extends="MyPackage">
         <action name="login" class="me.minicoral.action.User" method="login">
-            <result name="success">/WEB-INF/pages/listBlog.jsp</result>
+            <result name="success" type="redirect">/user/showBlog.action</result>
             <result name="login">/index.jsp</result>
             <result name="input">/index.jsp</result>
         </action>
@@ -28,5 +28,25 @@
         	<result name="success">/WEB-INF/pages/result.jsp</result>
         	<result name="input">/register.jsp</result>
         </action>
+        <action name="addBlog" class="me.minicoral.action.Blog" method="addBlog">
+        	<result name="success">/WEB-INF/pages/result.jsp</result>
+        	<result name="input">/addBlog.jsp</result>
+        </action>
+        <action name="showBlog" class="me.minicoral.action.Blog" method="showBlog">
+        	<result name="success">/listBlog.jsp</result>
+        </action>
+        <action name="showBlogDetail" class="me.minicoral.action.Blog" method="showBlogDetail">
+        	<result name="success">/blogDetail.jsp</result>
+        </action>
+        <action name="editBlog" class="me.minicoral.action.Blog" method="editBlog">
+        	<result name="success">/WEB-INF/pages/result.jsp</result>
+        </action>
+        <action name="editBlogUI" class="me.minicoral.action.Blog" method="editBlogUI">
+        	<result name="success">/editBlog.jsp</result>
+        </action>
+        <action name="delBlog" class="me.minicoral.action.Blog" method="delBlog">
+        	<result name="success">/WEB-INF/pages/result.jsp</result>
+        </action>
+        
     </package>
 </struts>

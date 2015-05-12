@@ -1,6 +1,8 @@
 package me.minicoral.dao;
 
 import java.util.List;
+
+import me.minicoral.action.Blog;
 import me.minicoral.action.User;
 
 public interface UserDao

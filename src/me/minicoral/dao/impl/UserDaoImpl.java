@@ -1,11 +1,13 @@
 package me.minicoral.dao.impl;
 
+import java.io.Serializable;
 import java.sql.SQLException;
 import java.util.List;
 
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 
+import me.minicoral.action.Blog;
 import me.minicoral.action.User;
 import me.minicoral.dao.UserDao;
 import me.minicoral.exception.DaoException;
@@ -52,5 +54,4 @@ public class UserDaoImpl implements UserDao
         	return null;
         }
 	}
-
 }

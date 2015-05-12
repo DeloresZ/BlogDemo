@@ -1,5 +1,6 @@
 package me.minicoral.service.impl;
 
+import java.io.Serializable;
 import java.util.List;
 
 import me.minicoral.action.User;
