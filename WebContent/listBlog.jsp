@@ -10,7 +10,7 @@
 <body>
 	<h1>这是展示博客页面</h1>
 	<h3>
-		<a href="${pageContext.request.contextPath}/editBlog.jsp">添加一篇博客</a>
+		<a href="${pageContext.request.contextPath}/addBlog.jsp">添加一篇博客</a>
 	</h3>
 
 	<div>
